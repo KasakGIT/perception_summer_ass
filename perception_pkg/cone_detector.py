@@ -22,15 +22,15 @@ class ConeDetector(Node):
         self.frame_id = 'Fr1A'
 
         # Tunable parameters
-        self.min_points = 5
+        self.min_points = 10
         self.max_points = 300
         self.height_range = (0.0, 0.4)
         self.max_distance = 15.0
-        self.eps = 0.2
-        self.min_samples = 5
+        self.eps = 0.5
+        self.min_samples = 70
         self.intensity_threshold = 2.0
         self.window_size_ratio = 0.2
-        self.marker_lifetime = 0.2  # seconds (reduced flickering)
+        self.marker_lifetime = 1  # seconds (reduced flickering)
 
     def safe_mean(self, arr):
         """Safe mean calculation that handles empty arrays"""
