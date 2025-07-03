@@ -1,0 +1,3 @@
+[console_scripts]
+cone_detector = perception_pkg.cone_detector:main
+

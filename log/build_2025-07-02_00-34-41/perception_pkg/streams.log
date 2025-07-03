@@ -1,0 +1,39 @@
+[0.990s] Invoking command in '/home/kasak/summer_pcp_ws/src/perception_pkg': PYTHONPATH=/home/kasak/summer_pcp_ws/src/perception_pkg/build/perception_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/kasak/summer_pcp_ws/src/perception_pkg/install/perception_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base build/perception_pkg build --build-base /home/kasak/summer_pcp_ws/src/perception_pkg/build/perception_pkg/build install --record /home/kasak/summer_pcp_ws/src/perception_pkg/build/perception_pkg/install.log --single-version-externally-managed install_data
+[1.320s] running egg_info
+[1.320s] creating build/perception_pkg/perception_pkg.egg-info
+[1.320s] writing build/perception_pkg/perception_pkg.egg-info/PKG-INFO
+[1.321s] writing dependency_links to build/perception_pkg/perception_pkg.egg-info/dependency_links.txt
+[1.321s] writing entry points to build/perception_pkg/perception_pkg.egg-info/entry_points.txt
+[1.321s] writing requirements to build/perception_pkg/perception_pkg.egg-info/requires.txt
+[1.321s] writing top-level names to build/perception_pkg/perception_pkg.egg-info/top_level.txt
+[1.321s] writing manifest file 'build/perception_pkg/perception_pkg.egg-info/SOURCES.txt'
+[1.361s] reading manifest file 'build/perception_pkg/perception_pkg.egg-info/SOURCES.txt'
+[1.361s] writing manifest file 'build/perception_pkg/perception_pkg.egg-info/SOURCES.txt'
+[1.361s] running build
+[1.362s] running build_py
+[1.362s] creating /home/kasak/summer_pcp_ws/src/perception_pkg/build/perception_pkg/build
+[1.362s] creating /home/kasak/summer_pcp_ws/src/perception_pkg/build/perception_pkg/build/lib
+[1.362s] creating /home/kasak/summer_pcp_ws/src/perception_pkg/build/perception_pkg/build/lib/perception_pkg
+[1.362s] copying perception_pkg/cone_detector.py -> /home/kasak/summer_pcp_ws/src/perception_pkg/build/perception_pkg/build/lib/perception_pkg
+[1.363s] copying perception_pkg/__init__.py -> /home/kasak/summer_pcp_ws/src/perception_pkg/build/perception_pkg/build/lib/perception_pkg
+[1.363s] running install
+[1.363s] running install_lib
+[1.363s] creating /home/kasak/summer_pcp_ws/src/perception_pkg/install/perception_pkg/lib/python3.10/site-packages/perception_pkg
+[1.363s] copying /home/kasak/summer_pcp_ws/src/perception_pkg/build/perception_pkg/build/lib/perception_pkg/cone_detector.py -> /home/kasak/summer_pcp_ws/src/perception_pkg/install/perception_pkg/lib/python3.10/site-packages/perception_pkg
+[1.363s] copying /home/kasak/summer_pcp_ws/src/perception_pkg/build/perception_pkg/build/lib/perception_pkg/__init__.py -> /home/kasak/summer_pcp_ws/src/perception_pkg/install/perception_pkg/lib/python3.10/site-packages/perception_pkg
+[1.363s] byte-compiling /home/kasak/summer_pcp_ws/src/perception_pkg/install/perception_pkg/lib/python3.10/site-packages/perception_pkg/cone_detector.py to cone_detector.cpython-310.pyc
+[1.366s] byte-compiling /home/kasak/summer_pcp_ws/src/perception_pkg/install/perception_pkg/lib/python3.10/site-packages/perception_pkg/__init__.py to __init__.cpython-310.pyc
+[1.366s] running install_data
+[1.366s] creating /home/kasak/summer_pcp_ws/src/perception_pkg/install/perception_pkg/share/ament_index
+[1.366s] creating /home/kasak/summer_pcp_ws/src/perception_pkg/install/perception_pkg/share/ament_index/resource_index
+[1.366s] creating /home/kasak/summer_pcp_ws/src/perception_pkg/install/perception_pkg/share/ament_index/resource_index/packages
+[1.366s] copying resource/perception_pkg -> /home/kasak/summer_pcp_ws/src/perception_pkg/install/perception_pkg/share/ament_index/resource_index/packages
+[1.366s] copying package.xml -> /home/kasak/summer_pcp_ws/src/perception_pkg/install/perception_pkg/share/perception_pkg
+[1.366s] creating /home/kasak/summer_pcp_ws/src/perception_pkg/install/perception_pkg/share/perception_pkg/launch
+[1.366s] copying launch/perception.launch.py -> /home/kasak/summer_pcp_ws/src/perception_pkg/install/perception_pkg/share/perception_pkg/launch
+[1.366s] running install_egg_info
+[1.369s] Copying build/perception_pkg/perception_pkg.egg-info to /home/kasak/summer_pcp_ws/src/perception_pkg/install/perception_pkg/lib/python3.10/site-packages/perception_pkg-0.0.0-py3.10.egg-info
+[1.369s] running install_scripts
+[1.392s] Installing cone_detector script to /home/kasak/summer_pcp_ws/src/perception_pkg/install/perception_pkg/lib/perception_pkg
+[1.393s] writing list of installed files to '/home/kasak/summer_pcp_ws/src/perception_pkg/build/perception_pkg/install.log'
+[1.423s] Invoked command in '/home/kasak/summer_pcp_ws/src/perception_pkg' returned '0': PYTHONPATH=/home/kasak/summer_pcp_ws/src/perception_pkg/build/perception_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/kasak/summer_pcp_ws/src/perception_pkg/install/perception_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base build/perception_pkg build --build-base /home/kasak/summer_pcp_ws/src/perception_pkg/build/perception_pkg/build install --record /home/kasak/summer_pcp_ws/src/perception_pkg/build/perception_pkg/install.log --single-version-externally-managed install_data

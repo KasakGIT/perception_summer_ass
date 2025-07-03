@@ -11,6 +11,9 @@ setup(
             ['resource/' + package_name]),
         ('share/' + package_name, ['package.xml']),
         ('share/' + package_name + '/launch', ['launch/perception.launch.py']),
+        ('share/' + package_name + '/ann_model', [  # 👈 ADD THIS
+        'ann_model/model_ann.pth'  # 👈 Path to your model
+    ]),
     ],
     install_requires=['setuptools'],
     zip_safe=True,
