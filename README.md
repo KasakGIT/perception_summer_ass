@@ -88,9 +88,9 @@ aren't cones.
 
 ## Results
 ```
-[INFO] [cone_detector]: 🔷 Cone: (1.24, -1.55), Color: yellow, Range: 1.99m
-[INFO] [cone_detector]: 🔷 Cone: (1.00, 1.45), Color: blue, Range: 1.76m
-[INFO] [cone_detector]: ✅ Frame processed in 62.42 ms
+[INFO] [cone_detector]:  Cone: (1.24, -1.55), Color: yellow, Range: 1.99m
+[INFO] [cone_detector]:  Cone: (1.00, 1.45), Color: blue, Range: 1.76m
+[INFO] [cone_detector]:  Frame processed in 62.42 ms
 ```
 
 - **97% classification accuracy** on test data
