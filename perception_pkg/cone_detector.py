@@ -174,10 +174,10 @@ class ConeDetector(Node):
             self.marker_pub.publish(marker_array)
 
             latency = (time.time() - start_time) * 1000
-            self.get_logger().info(f"✅ Frame processed in {latency:.2f} ms")
+            self.get_logger().info(f" Frame processed in {latency:.2f} ms")
 
         except Exception as e:
-            self.get_logger().error(f"❌ Error in callback: {str(e)}", throttle_duration_sec=1.0)
+            self.get_logger().error(f" Error in callback: {str(e)}", throttle_duration_sec=1.0)
 
 def main(args=None):
     rclpy.init(args=args)
