@@ -40,7 +40,7 @@ class ConeDetector(Node):
             10)
 
         self.marker_pub = self.create_publisher(MarkerArray, 'detected_cones', 10)
-        self.frame_id = 'velodyne'
+        self.frame_id = 'Lidar_F'
 
         self.min_points = 6
         self.max_points = 300
@@ -56,14 +56,14 @@ class ConeDetector(Node):
         self.total_cones_detected = 0
 
         # Load ANN model
-        self.model = ANN()
-        model_path = os.path.join(get_package_share_directory('perception_pkg'), 'ann_model', 'model_ann.pth')
-        self.model.load_state_dict(torch.load(model_path, map_location=torch.device('cpu')))
-        self.model.eval()
+        self.model = ANN() # make an empty shell of ann
+        model_path = os.path.join(get_package_share_directory('perception_pkg'), 'ann_model', 'model_ann.pth') # load the learned wts during training
+        self.model.load_state_dict(torch.load(model_path, map_location=torch.device('cpu'))) # put them in the ann shell
+        self.model.eval() # turn off dropout for consistency
 
     def pointcloud_callback(self, msg):
         try:
-            self.get_logger().info("📥 PointCloud2 callback received")
+            self.get_logger().info("PointCloud2 callback received")
 
             start_time = time.time()
             cloud = pc2.read_points(msg, field_names=["x", "y", "z", "intensity"], skip_nans=True)
@@ -162,10 +162,10 @@ class ConeDetector(Node):
                     self.range_stats[r_bin]['correct'] += 1
 
                 self.total_cones_detected += 1
-                self.get_logger().info(f"🔷 Cone: ({x_mean:.2f}, {y_mean:.2f}), Color: {cone_color}, Range: {range_m:.2f}m")
+                self.get_logger().info(f" Cone: ({x_mean:.2f}, {y_mean:.2f}), Color: {cone_color}, Range: {range_m:.2f}m")
 
             if self.total_cones_detected % 30 == 0 and self.total_cones_detected > 0:
-                self.get_logger().info("📊 Accuracy Report:")
+                self.get_logger().info(" Accuracy Report:")
                 for r in sorted(self.range_stats):
                     stats = self.range_stats[r]
                     acc = stats['correct'] / stats['total'] if stats['total'] > 0 else 0

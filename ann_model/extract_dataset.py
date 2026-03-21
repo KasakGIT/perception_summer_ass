@@ -90,7 +90,7 @@ def extract_clusters_from_rosbag(bag_path, topic_name="/velodyne_points"):
     all_features = np.array(all_features)
     all_labels = np.array(all_labels).reshape(-1,1)
     data = np.hstack((all_features, all_labels))  # shape (N, 5)
-    output_path = "src/perception_pkg/ann_model/dataset.npy"
+    output_path = "src/perception_pkg/ann_model/dataset.npz"
     np.savez(output_path, data)
     print(f"✅ Saved dataset.npz at {output_path} with shape:", data.shape)
 
